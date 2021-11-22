@@ -188,7 +188,29 @@
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>        
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (window.outerWidth <= 450) {
+                $('.container-devs').slick({
+                    infinite: true,
+                    lazyLoad: 'ondemand',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplaySpeed: 2000
+                });
+            }
+            if (window.outerWidth <= 800) {
+                $('.container-devs').slick({
+                    infinite: true,
+                    lazyLoad: 'ondemand',
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    autoplaySpeed: 2000
+                });
+            }
+        });
     </script>
 </body>
 
