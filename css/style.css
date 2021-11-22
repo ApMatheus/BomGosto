@@ -57,6 +57,10 @@ form{
     flex-wrap: wrap;
 }
 
+form h2{
+    width: 60%;
+}
+
 div.campo-medio{
     width: 47%;
     display: flex;
@@ -127,6 +131,33 @@ div.item-contato img{
     margin-right: 20px;
 }
 
+@media screen and (max-width: 800px){
+
+    section.section-form{
+        height: auto;
+        padding: 50px 0px;
+    }
+    div.container-form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    span.line-h{
+        width: 60vw;
+        height: 2px;
+        margin: 20px 0px;
+    }
+
+    div.container-info{
+        width: 80%;
+    }
+    
+    form{
+        width: 80%;
+    }
+}
+
 /*Sobre*/
 section.section-img-sobre{
     background: url(../imagens/BannerSobre.png);
@@ -195,8 +226,8 @@ div.faixa-devs{
 }
 
 .faixa-devs h2{
-    font-size: 40px;
-    margin-left: 100px;
+    font-size: calc(1em + 2vw);
+    margin-left: calc(50px + 1vw);
 }
 
 .section-devs h3{
@@ -213,7 +244,7 @@ div.container-devs{
 
 div.card-devs{
     width: 35%;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;

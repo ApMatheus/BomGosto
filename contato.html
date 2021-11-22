@@ -56,12 +56,19 @@
             <input type="text" name="pesquisa" id="pesquisa" placeholder="Qual receita você procura">
             <img src="./imagens/lupa.svg">
         </div>
-        <ul>
-            <li>Inicio</li>
-            <li>Contato</li>
-            <li>Sobre</li>
-            <li>Login</li>
-        </ul>
+        <div class="navegacao-menu">
+            <div class="icon-navigation" id="mobile-navigation">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a>Inicio</a></li>
+                <li><a>Contato</a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Login</a></li>
+            </ul>
+        </div>
         <nav class="nav-receitas">
             <ul>
                 <li>Doces</li>
@@ -84,6 +91,7 @@
         <section class="section-form">
             <div class="container-form">
                 <form>
+                    <h2>Fale conosco</h2>
                     <div class="campo-medio">
                         <label>Nome:</label>
                         <input type="text">
@@ -117,19 +125,41 @@
                 </div>
             </div>
         </section>
-        <footer class="rodapé">
-            <img src="" alt="">
-            <div class="rodape-contato">
-                <ul>
-                    <li>fale com a gente</li>
-                </ul>
-            </div>
-            <div class="rodape-nav"></div>
-            <div class="rodape-intitucional"></div>
-            <div class="rodape-btns"></div>
-        </footer>
     </main>
-
+    <footer>
+        <div class="centro_pe">
+            <div class="logo_div">
+                <div>
+                    <img src="./imagens/Logo-edit.png" class="logo_img" alt="">
+                </div>
+                <div class="part_logo">
+                    <p class="f1">Fale com a gente:<span class="apaga"><br>4002-2298<br>4002-3309</span></p>
+                    <p class="f2">Segunda a sexta-feita<br>09h às 18h</p>
+                </div>
+            </div>
+            <div class="navegacao">
+                <div class="part_1">
+                    <h4>Navegue por Aqui</h4>
+                    <p>Perguntas frequentes</p>
+                    <p>Cadastre sua receita</p>
+                    <p>Explorar</p>
+                </div>
+                <div class="part_2">
+                    <h4>Institucional</h4>
+                    <p>Bomgosto Brasil</p>
+                    <p>Fale conosco</p>
+                    <p>Trabalhe conosco</p>
+                    <p>Termos de uso</p>
+                    <p>Privacidade</p>
+                    <p>Investidores</p>
+                </div>
+                <div class="part_3">
+                    <p class="cadastra">Cadastre-se Aqui</p>
+                    <p class="regula">Regulamento</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
