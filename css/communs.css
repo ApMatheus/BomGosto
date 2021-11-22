@@ -1,3 +1,9 @@
+/*Formatação de fontes*/
+p, a, li, label, button, h2, h3,h4,h5{
+    font-family: Lato, sans-serif;
+}
+
+/*Modal*/
 .container-modal{
     position: fixed;
     width: 100vw;
@@ -41,6 +47,7 @@
     animation: modal .4s linear;
 }
 
+/*Cabeçalho*/
 header.cabecalho{
     width: 100vw;
     height: 15vh;
