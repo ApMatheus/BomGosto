@@ -19,8 +19,8 @@ div.navegacao-menu {
 }
 
 ul.nav-list {
-    position: absolute;
-    top: 15vh;
+    position:fixed;
+    top: 12vh;
     right: 0;
     width: 50vw;
     height: 85vh;
@@ -139,7 +139,6 @@ ul.nav-list li a:hover {
 /*Cabeçalho*/
 header.cabecalho {
     width: 100vw;
-    height: 15vh;
     padding-top: 20px;
     background-color: #F28B0C;
     display: flex;
@@ -150,7 +149,7 @@ header.cabecalho {
 }
 
 div.busca {
-    width: 250px;
+    width: calc(50px + 25vw);
     height: 30px;
     background-color: white;
     border-radius: 30px;
@@ -170,6 +169,7 @@ div.busca {
 .busca input {
     width: 100%;
     border: none;
+    margin-left: 20px;
 }
 
 .busca input:focus,
@@ -188,12 +188,13 @@ select:focus {
 
 nav.nav-receitas {
     width: 100vw;
-    height: 5vh;
+    height: auto;
     margin-top: 2vh;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 nav.nav-receitas ul li {

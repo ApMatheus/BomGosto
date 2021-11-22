@@ -1,3 +1,25 @@
+
+$(document).ready(function () {
+    if(window.outerWidth <= 450 ){
+        $('.container-devs').slick({
+        infinite: true,
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000
+    });
+    }if(window.outerWidth <=800){
+        $('.container-devs').slick({
+        infinite: true,
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        autoplaySpeed: 2000
+    });
+}
+});
+
 //Modal
 function abreModal() {
     let containerModal = document.querySelector('.container-modal');
@@ -23,9 +45,22 @@ receitas.forEach(function (e) {
     });
 });
 
+function fechaNavigation() {
+    const navList = document.getElementById("nav-list");
+    const item1 = document.querySelector(".item1");
+    const item2 = document.querySelector(".item2");
+    const item3 = document.querySelector(".item3");
+    if (navList.className == 'nav-list active') {
+        navList.classList.remove("active");
+        item1.classList.remove("active");
+        item2.classList.remove("active");
+        item3.classList.remove("active");
+    }
+}
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     fechaModal();
+    fechaNavigation();
 })
 
 //Menu mobile
@@ -49,3 +84,12 @@ const btnNvaigation = () => {
 
 const navigationMobile = document.getElementById("mobile-navigation");
 navigationMobile.addEventListener("click", btnNvaigation);
+
+
+window.onload = function () {
+    let setas = document.querySelectorAll(".slick-arrow");
+
+    for (seta of setas) {
+        seta.style.display = "none";
+    }
+};
